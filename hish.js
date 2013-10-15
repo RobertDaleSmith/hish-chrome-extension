@@ -64,8 +64,8 @@
     if (!document.getElementById('hish-share-wrapper')) {
       $("<div id='hish-share-wrapper'>" +
           "<div id='hish-share-popover-inner'>" + 
-            "<div id='hish-share-facebook'><i class='icon-facebook-hish icon-light-hish'></i></div>" +
-            "<div id='hish-share-twitter'><i class='icon-twitter-hish icon-light-hish'></i></div>" + 
+            "<div id='hish-share-facebook'><i class='icon-facebook-hish icon-light-hish' style='color:#fff;'></i></div>" +
+            "<div id='hish-share-twitter'><i class='icon-twitter-hish icon-light-hish' style='color:#fff;'></i></div>" + 
           "</div>" +
           "<div id='hish-share-arrow-wrapper'>" +
             "<span id='hish-share-arrow'></span>" +

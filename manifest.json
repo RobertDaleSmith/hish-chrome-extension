@@ -1,0 +1,33 @@
+{
+  "name" : "hish: Highlight-and-Share",
+  "version" : "1.0",
+  "description" : "Highlight any text online and with a single click you can share to Facebook or Twitter.",
+  "background" : {
+    "scripts": ["background.js"]
+  },
+  "content_scripts" : [
+    {
+      "matches" : [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "css": ["font-awesome.css"],
+      "js" : ["jquery.js","hish.js","contentscript_global.js" ],
+      "run_at" : "document_idle",
+      "all_frames" : false
+    },
+    {
+      "matches" : [
+        "https://www.facebook.com/sharer/*"
+      ],
+      "js" : ["contentscript_sharer.js"],
+      "run_at" : "document_idle",
+      "all_frames" : false
+    }
+  ],
+  "icons" : {
+    "48" : "icon_48.png",
+    "128" : "icon_128.png"
+  },
+  "manifest_version": 2
+}

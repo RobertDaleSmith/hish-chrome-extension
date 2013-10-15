@@ -32,6 +32,9 @@
       var facebook_popup = window.open(facebook_dialog_url,'facebook-share','height=600,width=500');
       if (window.focus) {facebook_popup.focus()}
       _this.hide();
+      
+      //Saves the selected text to the background page so the Facebook sharer can request it when it opens.
+      chrome.runtime.sendMessage({reqMessage: window.getSelection().toString()}, function(response){ });      
     });
 
     $('#hish-share-twitter').click(function(e) {
@@ -61,8 +64,8 @@
     if (!document.getElementById('hish-share-wrapper')) {
       $("<div id='hish-share-wrapper'>" +
           "<div id='hish-share-popover-inner'>" + 
-            "<div id='hish-share-facebook'><i class='icon-facebook icon-light'></i></div>" +
-            "<div id='hish-share-twitter'><i class='icon-twitter icon-light'></i></div>" + 
+            "<div id='hish-share-facebook'><i class='icon-facebook-hish icon-light-hish'></i></div>" +
+            "<div id='hish-share-twitter'><i class='icon-twitter-hish icon-light-hish'></i></div>" + 
           "</div>" +
           "<div id='hish-share-arrow-wrapper'>" +
             "<span id='hish-share-arrow'></span>" +
@@ -75,15 +78,16 @@
   Hish.prototype.loadStyles = function() {
     // font awesome css
     var head  = document.getElementsByTagName('head')[0];
-    if (!document.getElementById('font_awesome')) {
-      var font_awesome  = document.createElement('link');
-      font_awesome.id   = 'font_awesome';
-      font_awesome.rel  = 'stylesheet';
-      font_awesome.type = 'text/css';
-      font_awesome.href = 'http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css';
-      font_awesome.media = 'all';
-      head.appendChild(font_awesome);
-    }
+    // if (!document.getElementById('font_awesome')) {
+    //   var font_awesome  = document.createElement('link');
+    //   font_awesome.id   = 'font_awesome';
+    //   font_awesome.rel  = 'stylesheet';
+    //   font_awesome.type = 'text/css';
+    //   font_awesome.href = 'http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css';
+    //   font_awesome.media = 'all';
+    //   head.appendChild(font_awesome);
+    // }
+    //Manually added in Chrome manifest.json file.
 
     // medium share css
     if (!document.getElementById('medium_share_css')) {
@@ -149,13 +153,16 @@
         display: inline-block;\
         padding-top: 10px;\
         cursor: pointer;\
-        font-size: 1.35em;\
+        font-size: 22px;\
+        text-align:left;\
       }\
       #hish-share-facebook i {\
-        margin-left: 17px;\
+        padding-left: 17px;\
+        vertical-align:top;\
       }\
       #hish-share-twitter i {\
-        margin-left: 5px;\
+        padding-left: 5px;\
+        vertical-align:top;\
       }\
       #hish-share-arrow-wrapper {\
         display: block;\

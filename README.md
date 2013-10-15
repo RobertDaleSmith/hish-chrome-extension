@@ -7,4 +7,4 @@ Chrome extension that adds Medium's **hi**ghlight-and-**sh**are style feature to
 [http://hishjs.pancakeapps.com/](http://hishjs.pancakeapps.com/)
 
 ## Notes
-* Built using [http://hishjs.pancakeapps.com/](hist.js) by [https://github.com/dqian](Dennis Qian)
+* Built using [hist.js](http://hishjs.pancakeapps.com/) by [Dennis Qian](https://github.com/dqian)

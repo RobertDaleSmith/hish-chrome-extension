@@ -67,9 +67,9 @@
             "<div id='hish-share-facebook'><i class='icon-facebook-hish icon-light-hish' style='color:#fff;'></i></div>" +
             "<div id='hish-share-twitter'><i class='icon-twitter-hish icon-light-hish' style='color:#fff;'></i></div>" + 
           "</div>" +
-          "<div id='hish-share-arrow-wrapper'>" +
-            "<span id='hish-share-arrow'></span>" +
-          "</div>" +
+          // "<div id='hish-share-arrow-wrapper'>" +
+          //   "<span id='hish-share-arrow'></span>" +
+          // "</div>" +
         "</div>"
       ).appendTo('body');
     }
@@ -90,9 +90,9 @@
     //Manually added in Chrome manifest.json file.
 
     // medium share css
-    if (!document.getElementById('medium_share_css')) {
+    if (!document.getElementById('medium_share_css_hish')) {
       var style = document.createElement('style');
-      style.id = "medium_share_css";
+      style.id = "medium_share_css_hish";
       style.textContent = "#hish-share-wrapper {\
         display: none;\
         z-index: 500;\
@@ -117,11 +117,11 @@
         content: '';\
         display: block;\
         position: absolute;\
-        bottom: -3px;\
+        bottom: -5px;\
         left: 50%;\
-        margin-left: -4px;\
-        width: 8px;\
-        height: 8px;\
+        margin-left: -6px;\
+        width: 12px;\
+        height: 12px;\
         -webkit-transform: rotate(45deg);\
         -moz-transform: rotate(45deg);\
         -o-transform: rotate(45deg);\
@@ -130,24 +130,28 @@
         box-shadow: 0 0 2px #262625;\
       }\
       #hish-share-popover-inner {\
-        height: 42px;\
-        width: 80px;\
-        background-repeat: repeat-x;\
-        background-image: -webkit-gradient(linear,0 0,0 100%,from(rgba(49,49,47,0.97)),to(#262625));\
-        background-image: -moz-linear-gradient(top,rgba(49,49,47,0.97),#262625);\
-        background-image: -webkit-linear-gradient(top,rgba(49,49,47,0.97),#262625);\
-        background-image: -o-linear-gradient(top,rgba(49,49,47,0.97),#262625);\
-        background-image: linear-gradient(rgba(49, 49, 47, 0.972549), rgb(38, 38, 37)); \
-        -webkit-box-shadow: rgba(0, 0, 0, 0.701961) 0px 1px 3px -1px, rgba(255, 255, 255, 0.0666667) 0px 0px 1px 0px inset, rgba(255, 255, 255, 0.14902) 0px 0px 2px 0px inset;\
-        box-shadow: rgba(0, 0, 0, 0.701961) 0px 1px 3px -1px, rgba(255, 255, 255, 0.0666667) 0px 0px 1px 0px inset, rgba(255, 255, 255, 0.14902) 0px 0px 2px 0px inset;\
-        border-top-color: rgb(38, 38, 37);\
-        border-bottom-color: rgb(18, 18, 17);\
-        border-left-color: rgb(28, 28, 27);\
-        border-right-color: rgb(28, 28, 27);\
-        border: 1px solid;\
-        border-radius: 5px;\
+        height: 42px !important;\
+        width: 82px !important;\
+        background-repeat: repeat-x !important;\
+        background-image: -webkit-gradient(linear,0 0,0 100%,from(rgba(49,49,47,0.97)),to(#262625)) !important;\
+        background-image: -moz-linear-gradient(top,rgba(49,49,47,0.97),#262625) !important;\
+        background-image: -webkit-linear-gradient(top,rgba(49,49,47,0.97),#262625) !important;\
+        background-image: -o-linear-gradient(top,rgba(49,49,47,0.97),#262625) !important;\
+        background-image: linear-gradient(rgba(49, 49, 47, 0.972549), rgb(38, 38, 37)) !important;\
+        -webkit-box-shadow: rgba(0, 0, 0, 0.701961) 0px 1px 3px -1px, rgba(255, 255, 255, 0.0666667) 0px 0px 1px 0px inset, rgba(255, 255, 255, 0.14902) 0px 0px 2px 0px inset !important;\
+        box-shadow: rgba(0, 0, 0, 0.701961) 0px 1px 3px -1px, rgba(255, 255, 255, 0.0666667) 0px 0px 1px 0px inset, rgba(255, 255, 255, 0.14902) 0px 0px 2px 0px inset !important;\
+        border-top-color: rgb(38, 38, 37) !important;\
+        border-bottom-color: rgb(18, 18, 17) !important;\
+        border-left-color: rgb(28, 28, 27) !important;\
+        border-right-color: rgb(28, 28, 27) !important;\
+        border: 0px solid !important;\
+        border-style:solid !important;\
+        border-width:0px !important;\
+        border-radius: 5px !important;\
       }\
-      #hish-share-facebook, #hish-share-twitter {\
+      #hish-share-twitter {\
+        position:absolute;\
+        left:40px;\
         height: 30px;\
         width: 40px;\
         display: inline-block;\
@@ -155,6 +159,19 @@
         cursor: pointer;\
         font-size: 22px;\
         text-align:left;\
+        line-height:22px !important;\
+      }\
+      #hish-share-facebook {\
+        position:absolute;\
+        left:0px;\
+        height: 30px;\
+        width: 40px;\
+        display: inline-block;\
+        padding-top: 10px;\
+        cursor: pointer;\
+        font-size: 22px;\
+        text-align:left;\
+        line-height:22px !important;\
       }\
       #hish-share-facebook i {\
         padding-left: 17px;\
@@ -175,14 +192,15 @@
       }\
       #hish-share-arrow {\
         display: block;\
-        width: 20px;\
-        height: 20px;\
+        width: 20px !important;\
+        height: 20px !important;\
         -webkit-transform: rotate(45deg) scale(0.5);\
         -moz-transform: rotate(45deg) scale(0.5);\
         -o-transform: rotate(45deg) scale(0.5);\
         transform: rotate(45deg) scale(0.5);\
         background-color: #454543;\
         border: 2px solid #121211;\
+        border-style:solid;\
       }\
       ";
       document.body.appendChild(style);

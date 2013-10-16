@@ -44,7 +44,7 @@
   font-style: normal;
   text-decoration: inherit;
   -webkit-font-smoothing: antialiased;
-  *margin-right: .3em;
+  *margin-right: 4px;
 }
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
@@ -55,7 +55,7 @@
 /* makes the font 33% larger relative to the icon container */
 .icon-large:before {
   vertical-align: -10%;
-  font-size: 1.3333333333333333em;
+  font-size: 21px;
 }
 /* makes sure icons active on rollover in links */
 a [class^="icon-"],
@@ -66,16 +66,16 @@ a [class*=" icon-"] {
 [class^="icon-"].icon-fixed-width,
 [class*=" icon-"].icon-fixed-width {
   display: inline-block;
-  width: 1.1428571428571428em;
+  width: 22px;
   text-align: right;
-  padding-right: 0.2857142857142857em;
+  padding-right: 4px;
 }
 [class^="icon-"].icon-fixed-width.icon-large,
 [class*=" icon-"].icon-fixed-width.icon-large {
-  width: 1.4285714285714286em;
+  width: 22px;
 }
 .icons-ul {
-  margin-left: 2.142857142857143em;
+  margin-left: 34px;
   list-style-type: none;
 }
 .icons-ul > li {
@@ -83,8 +83,8 @@ a [class*=" icon-"] {
 }
 .icons-ul .icon-li {
   position: absolute;
-  left: -2.142857142857143em;
-  width: 2.142857142857143em;
+  left: -34px;
+  width: 34px;
   text-align: center;
   line-height: inherit;
 }
@@ -103,13 +103,13 @@ a [class*=" icon-"] {
 }
 .icon-border {
   border: solid 1px #eeeeee;
-  padding: .2em .25em .15em;
+  padding: 3px 4px 2px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
 .icon-2x {
-  font-size: 2em;
+  font-size: 32px;
 }
 .icon-2x.icon-border {
   border-width: 2px;
@@ -118,7 +118,7 @@ a [class*=" icon-"] {
   border-radius: 4px;
 }
 .icon-3x {
-  font-size: 3em;
+  font-size: 48px;
 }
 .icon-3x.icon-border {
   border-width: 3px;
@@ -127,7 +127,7 @@ a [class*=" icon-"] {
   border-radius: 5px;
 }
 .icon-4x {
-  font-size: 4em;
+  font-size: 64px;
 }
 .icon-4x.icon-border {
   border-width: 4px;
@@ -136,7 +136,7 @@ a [class*=" icon-"] {
   border-radius: 6px;
 }
 .icon-5x {
-  font-size: 5em;
+  font-size: 80px;
 }
 .icon-5x.icon-border {
   border-width: 5px;
@@ -152,11 +152,11 @@ a [class*=" icon-"] {
 }
 [class^="icon-"].pull-left,
 [class*=" icon-"].pull-left {
-  margin-right: .3em;
+  margin-right: 4px;
 }
 [class^="icon-"].pull-right,
 [class*=" icon-"].pull-right {
-  margin-left: .3em;
+  margin-left: 4px;
 }
 /* BOOTSTRAP SPECIFIC CLASSES
  * -------------------------- */
@@ -194,7 +194,7 @@ a [class*=" icon-"] {
 .nav [class^="icon-"].icon-large,
 .btn [class*=" icon-"].icon-large,
 .nav [class*=" icon-"].icon-large {
-  line-height: .9em;
+  line-height: 14px;
 }
 .btn [class^="icon-"].icon-spin,
 .nav [class^="icon-"].icon-spin,
@@ -210,23 +210,23 @@ a [class*=" icon-"] {
 .nav-pills [class^="icon-"].icon-large,
 .nav-tabs [class*=" icon-"].icon-large,
 .nav-pills [class*=" icon-"].icon-large {
-  line-height: .9em;
+  line-height: 14px;
 }
 .btn [class^="icon-"].pull-left.icon-2x,
 .btn [class*=" icon-"].pull-left.icon-2x,
 .btn [class^="icon-"].pull-right.icon-2x,
 .btn [class*=" icon-"].pull-right.icon-2x {
-  margin-top: .18em;
+  margin-top: 2px;
 }
 .btn [class^="icon-"].icon-spin.icon-large,
 .btn [class*=" icon-"].icon-spin.icon-large {
-  line-height: .8em;
+  line-height: 12px;
 }
 .btn.btn-small [class^="icon-"].pull-left.icon-2x,
 .btn.btn-small [class*=" icon-"].pull-left.icon-2x,
 .btn.btn-small [class^="icon-"].pull-right.icon-2x,
 .btn.btn-small [class*=" icon-"].pull-right.icon-2x {
-  margin-top: .25em;
+  margin-top: 4px;
 }
 .btn.btn-large [class^="icon-"],
 .btn.btn-large [class*=" icon-"] {
@@ -236,15 +236,15 @@ a [class*=" icon-"] {
 .btn.btn-large [class*=" icon-"].pull-left.icon-2x,
 .btn.btn-large [class^="icon-"].pull-right.icon-2x,
 .btn.btn-large [class*=" icon-"].pull-right.icon-2x {
-  margin-top: .05em;
+  margin-top: 0px;
 }
 .btn.btn-large [class^="icon-"].pull-left.icon-2x,
 .btn.btn-large [class*=" icon-"].pull-left.icon-2x {
-  margin-right: .2em;
+  margin-right: 3px;
 }
 .btn.btn-large [class^="icon-"].pull-right.icon-2x,
 .btn.btn-large [class*=" icon-"].pull-right.icon-2x {
-  margin-left: .2em;
+  margin-left: 3px;
 }
 /* Fixes alignment in nav lists */
 .nav-list [class^="icon-"],
@@ -257,9 +257,9 @@ a [class*=" icon-"] {
 .icon-stack {
   position: relative;
   display: inline-block;
-  width: 2em;
-  height: 2em;
-  line-height: 2em;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
   vertical-align: -35%;
 }
 .icon-stack [class^="icon-"],
@@ -269,13 +269,13 @@ a [class*=" icon-"] {
   position: absolute;
   width: 100%;
   height: 100%;
-  font-size: 1em;
+  font-size: 16px;
   line-height: inherit;
-  *line-height: 2em;
+  *line-height: 32px;
 }
 .icon-stack .icon-stack-base {
-  font-size: 2em;
-  *line-height: 1em;
+  font-size: 32px;
+  *line-height: 16px;
 }
 /* Animated rotating icon */
 .icon-spin {

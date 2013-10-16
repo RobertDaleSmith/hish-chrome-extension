@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<title>My Test Extension Options</title>
+		<link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/options.css" rel="stylesheet">
+
+		<script src="libs/jquery/jquery.min.js"></script>
+		<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+
+		<!-- Favorite Color:
+		<select id="color">
+		 <option value="red">red</option>
+		 <option value="green">green</option>
+		 <option value="blue">blue</option>
+		 <option value="yellow">yellow</option>
+		</select>
+
+		<br>
+		<div id="status"></div>
+		<button id="save">Save</button> <br>-->
+
+		<div id="table_holder">
+			<table class="table" id="black_list_table">
+				<thead>
+					<tr>
+						<th>Blacklisted <span style="font-weight:normal;font-size:12px;">(hish disabled on blacklisted sites)</span></th>
+						<th class="delete_button_holder">
+							<button type="button" class="btn btn-success" id="add_blacklist_site">add</button>
+							<button type="button" class="btn btn-warning" id="cancel_blacklist_site" style="display:none;">cancel</button>
+						</th>
+					</tr>
+					</thead>
+					<tbody id="blacklist_table_body">
+					
+					<tr>                  
+						<td>http://hishjs.pancakeapps.com/</td>
+						<td class="delete_button_holder"><button type="button" class="btn btn-danger">delete</button></td>
+					</tr>
+					<tr>				  
+						<td>https://medium.com/</td>
+						<td class="delete_button_holder"><button type="button" class="btn btn-danger">delete</button></td>
+					</tr>
+					<tr>                  
+						<td>http://techcrunch.com/</td>
+						<td class="delete_button_holder"><button type="button" class="btn btn-danger">delete</button></td>
+					</tr>
+				</tbody>
+	        </table>
+    	</div>
+
+
+
+
+	</body>
+
+	<script src="js/options.js"></script>
+
+</html>

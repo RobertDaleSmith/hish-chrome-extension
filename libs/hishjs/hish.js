@@ -64,8 +64,8 @@
     if (!document.getElementById('hish-share-wrapper')) {
       $("<div id='hish-share-wrapper'>" +
           "<div id='hish-share-popover-inner'>" + 
-            "<div id='hish-share-facebook'><i class='icon-facebook-hish icon-light-hish' style='color:#fff;'></i></div>" +
-            "<div id='hish-share-twitter'><i class='icon-twitter-hish icon-light-hish' style='color:#fff;'></i></div>" + 
+            "<div id='hish-share-facebook'><i class='icon-facebook-hish icon-light-hish' style='color:#fff;line-height:22px;width:22px;height:22px;'></i></div>" +
+            "<div id='hish-share-twitter'><i class='icon-twitter-hish icon-light-hish' style='color:#fff;line-height:22px;width:22px;height:22px;'></i></div>" + 
           "</div>" +
           // "<div id='hish-share-arrow-wrapper'>" +
           //   "<span id='hish-share-arrow'></span>" +
@@ -149,37 +149,25 @@
         border-width:0px !important;\
         border-radius: 5px !important;\
       }\
-      #hish-share-twitter {\
-        position:absolute;\
-        left:40px;\
-        height: 30px;\
-        width: 40px;\
-        display: inline-block;\
-        padding-top: 10px;\
-        cursor: pointer;\
-        font-size: 22px;\
-        text-align:left;\
-        line-height:22px !important;\
-      }\
-      #hish-share-facebook {\
-        position:absolute;\
-        left:0px;\
-        height: 30px;\
-        width: 40px;\
-        display: inline-block;\
-        padding-top: 10px;\
-        cursor: pointer;\
-        font-size: 22px;\
-        text-align:left;\
+      #hish-share-facebook, #hish-share-twitter {\
+        position:relative !important;\
+        float:left !important;\
+        height: 30px !important;\
+        width: 40px !important;\
+        display: inline-block !important;\
+        padding-top: 10px !important;\
+        cursor: pointer !important;\
+        font-size: 22px !important;\
+        text-align:left !important;\
         line-height:22px !important;\
       }\
       #hish-share-facebook i {\
-        padding-left: 17px;\
-        vertical-align:top;\
+        padding-left: 17px; !important\
+        vertical-align:top; !important\
       }\
       #hish-share-twitter i {\
-        padding-left: 5px;\
-        vertical-align:top;\
+        padding-left: 5px; !important\
+        vertical-align:top; !important\
       }\
       #hish-share-arrow-wrapper {\
         display: block;\

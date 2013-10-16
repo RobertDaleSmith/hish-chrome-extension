@@ -1,0 +1,48 @@
+body{
+	padding:0px;
+	margin:0px;
+
+	width:100%;
+}
+
+#table_holder{
+	position: relative;
+	display: block;
+	
+	padding:30px;
+}
+
+#black_list_table{
+	position: relative;
+	display: block;
+
+	max-width:600px;
+	min-width: 400px;
+}
+
+#add_blacklist_site{
+	margin-left:9px;
+	margin-right:9px;
+}
+
+button:focus {
+    outline: none !important;
+}
+
+table {
+    border-collapse: collapse !important;
+    border-radius: 4px !important;
+    border-style: hidden !important; /* hide standard table (collapsed) border */
+    box-shadow: 0 0 0 1px #ccc !important; /* this draws the table border  */ 
+}
+
+td {
+    border-bottom: 1px solid #ccc !important;
+    border-top: 1px solid #ccc !important;
+}
+
+
+.delete_button_holder{
+	text-align:center !important;
+	width:70px !important;
+}

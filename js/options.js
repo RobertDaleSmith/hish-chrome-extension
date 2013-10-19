@@ -16,11 +16,12 @@ function toggleAddSiteDialog() {
     $("#cancel_blacklist_site").css("display","block");
     $("#blacklist_table_body").prepend( getAddSiteDialogEl("") );
     $("#save_blacklist_site").click(saveButtonClick);
-    $("#new_black_list_input").keypress(function(e){  if(e.which == 13) { saveButtonClick(); }  });
+    $("#new_black_list_input").keydown(function(e){  if(e.keyCode == 13) { saveButtonClick(); } else if(e.keyCode == 27) { toggleAddSiteDialog(); }  });
     $("#new_black_list_input").focus();
     addSiteDialogActive = true;
   } else {
     closeAddBlackListSiteDialog();
+    $("#add_blacklist_site").focus();
   }
 }
 

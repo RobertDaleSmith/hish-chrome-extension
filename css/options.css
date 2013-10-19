@@ -1,4 +1,4 @@
-body, button, td {
+body {
   font-family: 'Noto Sans', 'Segoe UI', 'Lucida Grande', 'Open Sans', arial,
       sans-serif;
   font-size: 12px;
@@ -174,8 +174,6 @@ a {
 input[type="radio"]:disabled+label{
   color:rgb(223, 223, 223);
 }
-
-
 
 button:focus {
     outline: none !important;

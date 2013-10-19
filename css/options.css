@@ -1,29 +1,181 @@
-body{
-	padding:0px;
-	margin:0px;
-
-	width:100%;
+body, button, td {
+  font-family: 'Noto Sans', 'Segoe UI', 'Lucida Grande', 'Open Sans', arial,
+      sans-serif;
+  font-size: 12px;
+  color: rgb(48, 57, 66);
 }
 
-#table_holder{
-	position: relative;
-	display: block;
-	
-	padding:30px;
+body {
+  background-color: white;
+  font-size: 12px;
+  margin-left: 155px;
+  margin-right: 0px;
+  overflow-x: hidden;
 }
 
-#black_list_table{
-	position: relative;
-	display: block;
-
-	max-width:600px;
-	min-width: 400px;
+h1 {
+  font-weight: 400;
+  font-size: 18px;
+  display: inline;
+  line-height: 18px;
+  vertical-align: middle;
 }
 
-#add_blacklist_site{
-	margin-left:9px;
-	margin-right:9px;
+.top-title {
+  padding-left: 4px;
 }
+
+#logo-icon {
+  width: 36px;
+  height: 36px;
+  line-height: 18px;
+  vertical-align: middle;
+}
+
+header {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  min-width: 600px;
+}
+
+section {
+  -webkit-padding-start: 18px;
+  margin-bottom: 24px;
+  margin-top: 8px;
+  max-width: 600px;
+}
+
+section h3 {
+  -webkit-margin-start: -18px;
+  color: black;
+  line-height: 14px;
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 11px;
+}
+
+.checkbox {
+  height: 30px;
+}
+
+.controlled-setting-with-label {
+  -webkit-box-align: center;
+  display: -webkit-box;
+  padding-bottom: 7px;
+  padding-top: 7px;
+}
+
+p {
+  line-height: 1.4em;
+  font-weight: 400;
+}
+
+label {
+  display: block;
+}
+
+label:hover {
+  color: black;
+}
+
+label[for] {
+  display: inline;
+}
+
+button {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.options-sections {
+  margin-top: 66px;
+}
+
+.options-sections section {
+  margin-top: 8px;
+  margin-bottom: 24px;
+  max-width: 600px;
+}
+
+.hidden {
+  visibility: collapse
+}
+
+.ng-invalid {
+  background-color: #f77;
+}
+
+.savedMessage {
+  display: inline;
+}
+
+#unsupported-chromekey {
+  z-index: 2;
+  background-color: white;
+  position: absolute;
+  top: 125px;
+  left: 250px;
+  height: 300px;
+  width: 400px;
+  padding: 18px;
+  -webkit-box-shadow: 0px 0px 12px 3px rgb(223, 223, 223);
+}
+
+a {
+  text-decoration: none;
+}
+
+.fixed-top {
+
+  position: fixed;
+  top: 0;
+  background-color: white;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid rgb(181, 199, 222);
+  background-color: white;
+  width: 100%;
+  padding-bottom: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+}
+
+.chromekey-setup-frame-section {
+  -webkit-padding-start: 0;
+  background-color: white;
+  height: 190px;
+}
+
+.chromekey-setup-frame-active {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.scrolling-disabled {
+  overflow: hidden;
+}
+
+.custom-domain {
+  padding-left: 15px;
+  padding-top: 3px;
+  padding-bottom: 2px;
+}
+
+input[type="radio"]:disabled+label{
+  color:rgb(223, 223, 223);
+}
+
+
 
 button:focus {
     outline: none !important;
@@ -33,16 +185,51 @@ table {
     border-collapse: collapse !important;
     border-radius: 4px !important;
     border-style: hidden !important; /* hide standard table (collapsed) border */
-    box-shadow: 0 0 0 1px #ccc !important; /* this draws the table border  */ 
+    box-shadow: 0 0 0 1px rgb(223, 223, 223) !important; /* this draws the table border  */ 
 }
 
 td {
-    border-bottom: 1px solid #ccc !important;
-    border-top: 1px solid #ccc !important;
+    border-bottom: 1px solid rgb(223, 223, 223) !important;
+    border-top: 1px solid rgb(223, 223, 223) !important;
 }
 
+#table_holder{
+	position: relative;
+	display: block;	
+	padding:0 30px 0 0;
+	
+}
+
+#black_list_table{
+	position: relative;
+	display: block;
+	max-width:600px;
+	min-width: 400px;
+}
+
+#add_blacklist_site{
+	margin-left:9px;
+	margin-right:9px;
+}
 
 .delete_button_holder{
 	text-align:center !important;
 	width:70px !important;
+}
+
+.black_listed_url{
+	font-size: 16px;
+	min-height:100% !important;
+	max-width: 444px;
+	min-width: 274px;
+	padding:0px !important;
+	padding-left:20px !important;
+	padding-right:20px !important;
+	vertical-align: middle !important;
+	height:44px !important;
+	line-height:44px !important;
+
+	overflow: hidden;
+	white-space:nowrap; 
+	text-overflow: ellipsis;
 }

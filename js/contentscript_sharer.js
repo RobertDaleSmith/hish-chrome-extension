@@ -3,8 +3,10 @@ chrome.runtime.sendMessage({reqMessage: ""}, function(response) {
 	if(prevHighlightedText != ""){
 		document.getElementsByTagName("textarea")[0].focus();		
 		setTimeout(function(){ 
-			document.getElementsByTagName("textarea")[0].value = '"' + prevHighlightedText + isLastCharPunct(prevHighlightedText) +'"'; 
+			var stringToPost = '"' + prevHighlightedText + isLastCharPunct(prevHighlightedText) +'"';
+			document.getElementsByTagName("textarea")[0].value = stringToPost; 
 			document.getElementsByTagName("textarea")[0].select();
+			$(".mentionsHidden").attr("value", stringToPost);
 		},10);	
 	}
 });

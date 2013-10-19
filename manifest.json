@@ -1,7 +1,7 @@
 {
   "name" : "hish: Highlight-and-Share",
   "short_name" : "hish",
-  "version" : "1.0.6",
+  "version" : "1.0.7",
   "description" : "Highlight any text online and with a single click you can share to Facebook or Twitter.",
   "background" : {
     "scripts": ["js/background.js"]

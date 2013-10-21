@@ -6,6 +6,9 @@ Chrome extension that adds Medium's **hi**ghlight-and-**sh**are style feature to
 ## Download Chrome Extension
 [https://chrome.google.com/webstore/detail/hish-highlight-and-share/abjogbjmhejlfeepnhmgenhcdkmjabeh](https://chrome.google.com/webstore/detail/hish-highlight-and-share/abjogbjmhejlfeepnhmgenhcdkmjabeh)
 
+## Video Intro/Demo
+[http://www.youtube.com/watch?v=Vd6ktIbVXBI](http://www.youtube.com/watch?v=Vd6ktIbVXBI)
+
 ## Example and Inspiration
 [http://hishjs.pancakeapps.com/](http://hishjs.pancakeapps.com/)
 
